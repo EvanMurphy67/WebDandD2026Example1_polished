@@ -3,16 +3,8 @@
     <p>This is content on the home page</p>
 </main>
 --}}
-<!DOCTYPE html>
-<html lang="en" id="top">
-<body>
-    <header>
-        <img src="images/logo.png" alt="Logo" class="logo">
-        <h1>My Top 5 Video Games</h1>
-        <p>
-            <a href="#footer">Footer</a>
-        </p>
-    </header>
+
+
     <main>
         <article class="intropara" id="intro" style="color:white;">
     <h2>Introduction</h2>
@@ -55,5 +47,13 @@
         <p>© 2026 Top 5 Video Games</p>
         <p><a href="#top">Back to Top</a></p>
     </footer>
-</body>
-</html>
+
+    <script>
+        const button = document.querySelector(".menu-toggle");
+        const nav = document.querySelector("nav");
+
+        button.addEventListener("click", () => {
+            nav.classList.toggle("show");
+        });
+    </script>
+

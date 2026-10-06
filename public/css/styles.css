@@ -16,6 +16,7 @@ nav li {
     transform: translateY(-5px);
 }
 nav {
+    display: none;
     background-color:  #ad0000;
     padding: 5px;
 }
@@ -50,7 +51,8 @@ nav ul li a {
 
 header{
     background-color: #ad0000;
-    padding : 10px
+    padding : 10px;
+    
     
 }
 h1{
@@ -397,6 +399,29 @@ section.contactform {
     overflow-wrap: break-word;
 }
 
+@media (min-width: 860px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav a {
+        padding: 0;
+    }
+}
 
 @media (max-width: 699px) {
     header {
@@ -430,4 +455,20 @@ section.contactform {
     .newspaper {
         column-count: 1;
     }
+}
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    float: right;
+}
+nav.show {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #6b73e4;
 }
